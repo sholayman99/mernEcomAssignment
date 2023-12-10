@@ -2,11 +2,11 @@ const mongoose = require("mongoose");
 
 const DataSchema = mongoose.Schema({
 
-  user: { type: mongoose.Schema.Types.ObjectId, required: true , ref:"User"},
+  user: { type: mongoose.Schema.Types.ObjectId, required: true , ref:"UserModel"},
 
   items: [{
 
-      product: { type: mongoose.Schema.Types.ObjectId , ref:"Product" },
+      product: { type: mongoose.Schema.Types.ObjectId , ref:"ProductModel" },
       quantity: { type: Number }
 
     }],

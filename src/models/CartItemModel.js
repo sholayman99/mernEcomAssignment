@@ -2,8 +2,8 @@ const mongoose = require("mongoose");
 
 const DataSchema = mongoose.Schema({
 
-  user : { type: mongoose.Schema.Types.ObjectId , required: true , ref:"User" },
-  product : { type: mongoose.Schema.Types.ObjectId , required: true , ref:"Product"},
+  user : { type: mongoose.Schema.Types.ObjectId , required: true , ref:"UserModel" },
+  product : { type: mongoose.Schema.Types.ObjectId , required: true , ref:"ProductModel"},
   quantity : { type: Number , required: true , min: 1 }
 
 },
