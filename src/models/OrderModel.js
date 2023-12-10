@@ -11,9 +11,9 @@ const DataSchema = mongoose.Schema({
 
     }],
 
-  totalAmount: { type: Number, required: true, min: 1 },
-  shippingAddress: { type: String, required: true },
-  status: { type: Boolean, required: true, default: "Pending" },
+  totalAmount: { type: Number , required: true, min: 1 },
+  shippingAddress: { type: String , required: true },
+  status: { type: String , required: true, default: "Pending" },
 },
 
 { timestamps: true , versionKey: false });
